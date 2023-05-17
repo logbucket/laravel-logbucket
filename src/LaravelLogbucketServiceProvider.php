@@ -1,6 +1,6 @@
 <?php
 
-namespace Logbucket\LaravelLogbucket;
+namespace Logbucket\LaravelLogBucket;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -20,9 +20,14 @@ class LaravelLogbucketServiceProvider extends ServiceProvider
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {
-            $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('laravel-logbucket.php'),
-            ], 'config');
+            $this->publishes(
+                [
+                    __DIR__ . "/../config/config.php" => config_path(
+                        "laravel-logbucket.php"
+                    ),
+                ],
+                "config"
+            );
 
             // Publishing the views.
             /*$this->publishes([
@@ -50,11 +55,14 @@ class LaravelLogbucketServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-logbucket');
+        $this->mergeConfigFrom(
+            __DIR__ . "/../config/config.php",
+            "laravel-logbucket"
+        );
 
         // Register the main class to use with the facade
-        $this->app->singleton('laravel-logbucket', function () {
-            return new LaravelLogbucket;
+        $this->app->singleton("laravel-logbucket", function () {
+            return new LaravelLogbucket();
         });
     }
 }

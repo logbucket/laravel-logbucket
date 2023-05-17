@@ -1,0 +1,11 @@
+{
+  "name": "logbucket-laravel",
+  "version": "1.0.0",
+  "description": "[![Latest Version on Packagist](https://img.shields.io/packagist/v/logbucket/laravel-logbucket.svg?style=flat-square)](https://packagist.org/packages/logbucket/laravel-logbucket) [![Total Downloads](https://img.shields.io/packagist/dt/logbucket/laravel-logbucket.svg?style=flat-square)](https://packagist.org/packages/logbucket/laravel-logbucket)",
+  "author": "Andrey Abramov",
+  "license": "MIT",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.19.4",
+    "prettier": "^2.8.8"
+  }
+}

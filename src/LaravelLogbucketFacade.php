@@ -4,9 +4,6 @@ namespace Logbucket\LaravelLogbucket;
 
 use Illuminate\Support\Facades\Facade;
 
-/**
- * @see \Logbucket\LaravelLogbucket\Skeleton\SkeletonClass
- */
 class LaravelLogbucketFacade extends Facade
 {
     /**
@@ -16,6 +13,6 @@ class LaravelLogbucketFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'laravel-logbucket';
+        return "laravel-logbucket";
     }
 }

@@ -2,7 +2,12 @@
 
 namespace Logbucket\LaravelLogbucket;
 
-class LaravelLogbucket
+use Monolog\Handler\AbstractProcessingHandler;
+
+class LogBucketDriver extends AbstractProcessingHandler
 {
-    // Build your next great package.
+    protected function write(array $record): void
+    {
+        dd($record);
+    }
 }
