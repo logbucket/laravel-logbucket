@@ -1,4 +1,4 @@
-# Laravel Logbucket
+# Laravel LogBucket
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/logbucket/laravel-logbucket.svg?style=flat-square)](https://packagist.org/packages/logbucket/laravel-logbucket)
 [![Total Downloads](https://img.shields.io/packagist/dt/logbucket/laravel-logbucket.svg?style=flat-square)](https://packagist.org/packages/logbucket/laravel-logbucket)

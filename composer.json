@@ -1,6 +1,6 @@
 {
   "name": "logbucket/laravel-logbucket",
-  "description": "Logbucket для Laravel",
+  "description": "LogBucket для Laravel",
   "keywords": [
     "logbucket",
     "laravel-logbucket"
@@ -26,12 +26,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Logbucket\\LaravelLogBucket\\": "src"
+      "LogBucket\\LaravelLogBucket\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Logbucket\\LaravelLogBucket\\Tests\\": "tests"
+      "LogBucket\\LaravelLogBucket\\Tests\\": "tests"
     }
   },
   "scripts": {
@@ -44,10 +44,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Logbucket\\LaravelLogbucket\\LaravelLogbucketServiceProvider"
+        "LaravelLogBucketServiceProvider"
       ],
       "aliases": {
-        "LaravelLogbucket": "Logbucket\\LaravelLogbucket\\LaravelLogbucketFacade"
+        "LaravelLogbucket": "LaravelLogBucketFacade"
       }
     }
   }

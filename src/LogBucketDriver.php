@@ -1,6 +1,6 @@
 <?php
 
-namespace Logbucket\LaravelLogbucket;
+namespace LogBucket\LaravelLogBucket;
 
 use Monolog\Handler\AbstractProcessingHandler;
 

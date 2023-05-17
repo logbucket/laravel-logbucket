@@ -1,10 +1,10 @@
 <?php
 
-namespace Logbucket\LaravelLogBucket;
+namespace LogBucket\LaravelLogBucket;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelLogbucketServiceProvider extends ServiceProvider
+class LaravelLogBucketServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -61,8 +61,8 @@ class LaravelLogbucketServiceProvider extends ServiceProvider
         );
 
         // Register the main class to use with the facade
-        $this->app->singleton("laravel-logbucket", function () {
-            return new LaravelLogbucket();
+        $this->app->singleton("LogBucketDriver", function () {
+            return new LogBucketDriver();
         });
     }
 }
