@@ -16,39 +16,15 @@
     }
   ],
   "require": {
-    "php": "^8.0",
-    "guzzlehttp/guzzle": "^7.6",
-    "illuminate/support": "^8.0"
-  },
-  "require-dev": {
-    "orchestra/testbench": "^6.0",
-    "phpunit/phpunit": "^9.0"
+    "php": "^7.2.5 || ^8.0",
+    "guzzlehttp/guzzle": "^7.6"
   },
   "autoload": {
     "psr-4": {
       "LogBucket\\LaravelLogBucket\\": "src"
     }
   },
-  "autoload-dev": {
-    "psr-4": {
-      "LogBucket\\LaravelLogBucket\\Tests\\": "tests"
-    }
-  },
-  "scripts": {
-    "test": "vendor/bin/phpunit",
-    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-  },
   "config": {
     "sort-packages": true
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "LaravelLogBucketServiceProvider"
-      ],
-      "aliases": {
-        "LaravelLogbucket": "LaravelLogBucketFacade"
-      }
-    }
   }
 }
