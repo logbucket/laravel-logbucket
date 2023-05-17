@@ -9,6 +9,5 @@ class LogBucketDriver extends AbstractProcessingHandler
 {
     protected function write(LogRecord $record): void
     {
-        dd($record);
     }
 }
